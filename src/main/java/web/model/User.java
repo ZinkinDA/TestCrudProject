@@ -1,10 +1,19 @@
 package web.model;
 
+import jakarta.validation.constraints.NotEmpty;
 
+import javax.persistence.*;
+
+@Entity
+@Table(name = "new_table")
 public class User {
-
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "id")
     int id;
+    @Column(name = "name")
     String name;
+    @Column(name = "surname")
     String surName;
 
     public User(){};
