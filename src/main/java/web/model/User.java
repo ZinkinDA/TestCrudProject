@@ -18,12 +18,11 @@ public class User {
 
     public User(){};
 
-    public User(int id,String name,String surName){
-        this.id = id;
+
+    public User(String name,String surName){
         this.name = name;
         this.surName = surName;
     }
-
     public int getId() {
         return id;
     }
